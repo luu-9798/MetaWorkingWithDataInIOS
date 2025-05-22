@@ -21,6 +21,11 @@ func HTTP_request_and_response_in_Swift() throws {
     
     //Create a new URLRequest object with unwrapped url
     let request = URLRequest(url: url)
+    
+    //Create a new data task
+    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        
+    }
 }
 
 try HTTP_request_and_response_in_Swift()
