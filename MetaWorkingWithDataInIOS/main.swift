@@ -18,6 +18,9 @@ func HTTP_request_and_response_in_Swift() throws {
     guard let url = url else {
         throw NSError()
     }
+    
+    //Create a new URLRequest object with unwrapped url
+    let request = URLRequest(url: url)
 }
 
 try HTTP_request_and_response_in_Swift()
