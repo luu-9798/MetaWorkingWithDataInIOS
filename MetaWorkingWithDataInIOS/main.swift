@@ -26,6 +26,9 @@ func HTTP_request_and_response_in_Swift() throws {
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         
     }
+    
+    //Resume the task to execute it
+    task.resume()
 }
 
 try HTTP_request_and_response_in_Swift()
