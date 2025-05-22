@@ -24,7 +24,10 @@ func HTTP_request_and_response_in_Swift() throws {
     
     //Create a new data task
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
-        
+        //Handle the response data of the data task
+        if let data = data {
+            
+        }
     }
     
     //Resume the task to execute it
