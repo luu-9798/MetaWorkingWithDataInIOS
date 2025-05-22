@@ -26,7 +26,8 @@ func HTTP_request_and_response_in_Swift() throws {
     let task = URLSession.shared.dataTask(with: request) { data, response, error in
         //Handle the response data of the data task
         if let data = data {
-            
+            //Convert the data to String
+            let string = String(data: data, encoding: .utf8)
         }
     }
     
