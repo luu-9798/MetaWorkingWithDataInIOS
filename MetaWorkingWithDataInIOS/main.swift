@@ -28,6 +28,7 @@ func HTTP_request_and_response_in_Swift() throws {
         if let data = data {
             //Convert the data to String
             let string = String(data: data, encoding: .utf8)
+            print(string)
         }
     }
     
@@ -36,3 +37,5 @@ func HTTP_request_and_response_in_Swift() throws {
 }
 
 try HTTP_request_and_response_in_Swift()
+
+RunLoop.main.run()
