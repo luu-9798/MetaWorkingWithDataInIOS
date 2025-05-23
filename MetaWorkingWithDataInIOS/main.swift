@@ -36,6 +36,27 @@ func HTTP_request_and_response_in_Swift() throws {
     task.resume()
 }
 
-try HTTP_request_and_response_in_Swift()
+func Parsing_data_in_Swift() throws {
+    let recipesJSONString = """
+    [
+        {
+            "title": "Apple pie",
+            "views": 3847,
+            "rating": 4.5
+        },
+        {
+            "title": "Boiled egg",
+            "views": 10584,
+            "rating": 4.9
+        },
+        {
+            "title": "Bacon roll",
+            "views": 5847,
+            "rating": 3.2
+        }
+    ]
+    """
+    
+}
 
 RunLoop.main.run()
