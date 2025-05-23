@@ -69,6 +69,9 @@ func Parsing_data_in_Swift() throws {
     
     //Create a new JSONDecoder instance
     let decoder = JSONDecoder()
+    
+    //Decode JSON into the Swift object
+    let recipes = try decoder.decode([Recipe].self, from: recipesData)
 }
 
 RunLoop.main.run()
