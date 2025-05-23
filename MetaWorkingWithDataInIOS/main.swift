@@ -57,6 +57,12 @@ func Parsing_data_in_Swift() throws {
     ]
     """
     
+    //Define a custom Swift struct
+    struct Recipe: Decodable {
+        let title: String
+        let rating: Double
+        let views: Int
+    }
 }
 
 RunLoop.main.run()
