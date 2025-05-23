@@ -38,22 +38,23 @@ func HTTP_request_and_response_in_Swift() throws {
 
 func Parsing_data_in_Swift() throws {
     let recipesJSONString = """
+
     [
-        {
-            "title": "Apple pie",
-            "views": 3847,
-            "rating": 4.5
-        },
-        {
-            "title": "Boiled egg",
-            "views": 10584,
-            "rating": 4.9
-        },
-        {
-            "title": "Bacon roll",
-            "views": 5847,
-            "rating": 3.2
-        }
+        {
+            "title": "Apple pie",
+            "views": 3847,
+            "rating": 4.5
+        },
+        {
+            "title": "Boiled egg",
+            "views": 10584,
+            "rating": 4.9
+        },
+        {
+            "title": "Bacon roll",
+            "views": 5847,
+            "rating": 3.2
+        }
     ]
     """
     
@@ -72,6 +73,13 @@ func Parsing_data_in_Swift() throws {
     
     //Decode JSON into the Swift object
     let recipes = try decoder.decode([Recipe].self, from: recipesData)
+    
+    //Output information to the console
+    recipes.forEach {
+        print("\($0.title) with a rating of \($0.rating)")
+    }
 }
+
+try Parsing_data_in_Swift()
 
 RunLoop.main.run()
