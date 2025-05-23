@@ -63,6 +63,9 @@ func Parsing_data_in_Swift() throws {
         let rating: Double
         let views: Int
     }
+    
+    //Convert JSON String to Data
+    let recipesData = Data(recipesJSONString.utf8)
 }
 
 RunLoop.main.run()
