@@ -66,6 +66,9 @@ func Parsing_data_in_Swift() throws {
     
     //Convert JSON String to Data
     let recipesData = Data(recipesJSONString.utf8)
+    
+    //Create a new JSONDecoder instance
+    let decoder = JSONDecoder()
 }
 
 RunLoop.main.run()
